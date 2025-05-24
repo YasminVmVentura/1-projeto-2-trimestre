@@ -1,0 +1,92 @@
+:root {
+  --verde-oliva: #a9c08d;
+  --azul: #91c3e6;
+  --amarelo: #ffdd57;
+  --branco: #fff;
+  --cinza-claro: #1e1e1e;
+  --cinza-escuro: #f2f2f2;
+  --sombra: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--cinza-escuro);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #2d3e25, #1c3a4f);
+  color: var(--branco);
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.top-img {
+  width: 220px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px var(--sombra);
+}
+
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro, .mensagem-final {
+  text-align: center;
+}
+
+.intro h2,
+.mensagem-final h2 {
+  color: var(--amarelo);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.intro p,
+.mensagem-final p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: var(--branco);
+}
+
+.intro button {
+  background-color: var(--amarelo);
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px var(--sombra);
+}
+
+.intro button:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
+
+.grid {
+  dis
+
