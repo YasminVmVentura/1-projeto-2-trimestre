@@ -68,9 +68,40 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Festejando Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#mapa">Mapa de Conexões</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-text">
+        <p>&copy; 2025 Festejando Conexão Campo e Cidade. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
+
+<section class="mapa-interativo" id="mapa">
+  <h2>Mapa de Conexões</h2>
+  <div class="mapa">
+    <div class="ponto" data-info="Feiras urbanas aproximam o produtor rural dos consumidores da cidade.">
+      <i data-lucide="shopping-cart"></i><span>Feira</span>
+    </div>
+    <div class="ponto" data-info="A cidade consome, mas também educa e financia tecnologias para o campo.">
+      <i data-lucide="building"></i><span>Cidade</span>
+    </div>
+    <div class="ponto" data-info="O campo produz alimentos, fibras e energia renovável para todos.">
+      <i data-lucide="tree-pine"></i><span>Campo</span>
+    </div>
+    <div class="ponto" data-info="As estradas conectam vidas, saberes e produtos. Investir em logística é essencial.">
+      <i data-lucide="road-sign"></i><span>Estrada</span>
+    </div>
+  </div>
+  <div class="info-box" id="infoBox">Clique em um ponto para saber mais.</div>
+</section>
+
 </html>

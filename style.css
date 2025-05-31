@@ -1,9 +1,12 @@
 :root {
   --verde-oliva: #a9c08d;
+  --verde-vivo: #9bd672;
   --azul: #91c3e6;
+  --azul-escuro: #487fa2;
   --amarelo: #ffdd57;
+  --amarelo-vivo: #ffe773;
   --branco: #fff;
-  --cinza-claro: #1e1e1e;
+  --cinza-claro: #1b1b1b;
   --cinza-escuro: #f2f2f2;
   --sombra: rgba(0, 0, 0, 0.6);
 }
@@ -16,16 +19,20 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--cinza-claro);
+  background: linear-gradient(to bottom, #151515, #222);
   color: var(--cinza-escuro);
   line-height: 1.6;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header {
-  background: linear-gradient(90deg, #2d3e25, #1c3a4f);
+  background: linear-gradient(90deg, var(--verde-oliva), var(--verde-vivo));
   color: var(--branco);
   padding: 60px 20px 30px;
   text-align: center;
+  border-bottom: 4px solid var(--verde-oliva);
+  box-shadow: 0 8px 20px var(--sombra);
 }
 
 header h1 {
@@ -35,14 +42,14 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .top-img {
   width: 220px;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 10px var(--sombra);
+  box-shadow: 0 5px 15px var(--sombra);
 }
 
 section {
@@ -57,36 +64,80 @@ section {
 
 .intro h2,
 .mensagem-final h2 {
-  color: var(--amarelo);
+  color: var(--verde-vivo);
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .intro p,
 .mensagem-final p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-bottom: 15px;
   color: var(--branco);
 }
 
 .intro button {
-  background-color: var(--amarelo);
+  background-color: var(--verde-oliva);
   color: #000;
-  padding: 12px 25px;
+  padding: 14px 30px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 10px var(--sombra);
 }
 
 .intro button:hover {
-  background-color: #e6c200;
+  background-color: #8a9b6e;
   transform: scale(1.05);
 }
 
 .grid {
-  dis
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
 
+.card {
+  background: linear-gradient(135deg, #2a2a2a, #353535);
+  padding: 30px 20px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--sombra);
+  transition: transform 0.3s ease, background 0.3s;
+  border-left: 6px solid var(--verde-vivo);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #3b3b3b;
+}
+
+.card h3 {
+  color: var(--verde-oliva);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.icon {
+  color: var(--verde-vivo);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  background: #1c1c1c;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* Mapa de Conex*
